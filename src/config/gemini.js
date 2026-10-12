@@ -4,7 +4,7 @@ import {
     HarmBlockThreshold,
   } from "@google/generative-ai";
   
-  const MODEL_NAME = "gemini-1.0-pro";
+  const MODEL_NAME = "gemini-2.5-flash";
   
   // Paste Your API KEY Below
   const API_KEY = "AIzaSyDyO9t7iZL5ZgnNCYXI-emVUnyKQxzNspg";
@@ -48,7 +48,6 @@ import {
   
     const result = await chat.sendMessage(prompt);
     const response = result.response;
-    return response.text();
+    return response.text(); ///YE RESPONSE RETURN KAREGA DATA JO HUMNE RUNCHAT SE LIYA HAI AND WE WILL STORE IT IN CONST RESPONSE IN CONTEXT .JSX RUNCHAT
   }
-  
-  export default runChat;
+  export default runChat
